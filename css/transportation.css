@@ -1,0 +1,49 @@
+main,
+#people,
+#destinations {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.destination {
+  display: flex;
+  flex-direction: row;
+}
+
+.destination-thumbnail {
+  border-radius: .25rem;
+  display: block;
+}
+
+.destination-details {
+  padding: .5rem 1rem;
+}
+
+.destination-button {
+  margin-top: 1rem;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.input-row > * {
+  flex: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    padding-inline: 1rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .destination-thumbnail {
+    height: 100%;
+  }
+}

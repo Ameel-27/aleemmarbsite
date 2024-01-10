@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MARB International Services &ndash; Welfare Trust</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/welfare-trust.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/welfare-trust.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="./index.html">MARB International Services</a>
+      </div>
+      <div id="nav-button">&equiv;</div>
+      <div class="nav-items">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./e-commerce.html" class="nav-item">E-Commerce</a>
+        <a href="./hotel-booking.html" class="nav-item">Hotel Booking</a>
+        <a href="./transportation.html" class="nav-item">Transportation</a>
+        <a href="./welfare-trust.html" class="nav-item active">Welfare Trust</a>
+      </div>
+    </nav>
+    <main>
+      <section id="loan-service">
+        <h2>Loan Service</h2>
+        <div class="service-form">
+          <div class="input-row">
+            <input type="text" placeholder="What is your first name?">
+            <input type="text" placeholder="What is your last name?">
+            <input type="text" placeholder="What is your personal address?">
+          </div>
+          <div class="input-row">
+            <input type="text" placeholder="What is your credit card number?">
+            <input type="text" placeholder="What is the expiration date? (DD/MM/YYYY)">
+            <input type="text" placeholder="What is the security code? (CVC)">
+          </div>
+          <div class="input-row">
+            <input id="loan-amount" type="number" placeholder="How much money would you like to borrow? (USD)">
+            <input id="loan-duration" type="number" placeholder="For how many months would you like to keep the loan?" step="12">
+          </div>
+          <p id="loan-repayment"></p>
+          <div class="input-row">
+            <button onclick="loan()">Submit</button>
+          </div>
+        </div>
+      </section>
+      <section id="medical-service">
+        <h2>Medical Service</h2>
+        <div class="service-form">
+          <div class="input-row">
+            <input id="patient-name" type="text" placeholder="What is your first name?">
+            <input type="text" placeholder="What is your last name?">
+            <input type="tel" placeholder="What is your phone number?">
+          </div>
+          <div class="input-row">
+            <select title="Disease">
+              <option selected>Allergic Reactions</option>
+              <option>Bacterial Infections</option>
+              <option>Cancerous Diseases</option>
+              <option>Diabetes Complications</option>
+              <option>Heart Diseases</option>
+              <option>Kidney Stones</option>
+              <option>Obesity</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <p id="medical-message"></p>
+          <div class="input-row">
+            <button onclick="medical()">Submit</button>
+          </div>
+        </div>
+      </section>
+      <section id="scholar-service">
+        <h2>Scholar Service</h2>
+        <div class="service-form">
+          <div class="input-row">
+            <input type="text" placeholder="What is your first name?">
+            <input type="text" placeholder="What is your last name?">
+            <input type="email" placeholder="What is your e-mail address?">
+          </div>
+          <div class="input-row">
+            <select title="Gender">
+              <option selected>Male</option>
+              <option>Female</option>
+            </select>
+            <input type="date" title="Enter your date of birth">
+          </div>
+          <div class="input-row">
+            <input type="text" placeholder="What institution do you attend?">
+            <input id="institute-fee" type="number" placeholder="What is your institutional fee? (USD)">
+            <select title="Fee Frequency Rate">
+              <option selected>Monthly</option>
+              <option>Semestral</option>
+            </select>
+          </div>
+          <div class="input-row">
+            <select title="Academic Degree">
+              <option selected>Bachelor's</option>
+              <option>Master's</option>
+            </select>
+            <select id="student-selection" title="10th Grade Percentage">
+              <option selected>70-79%</option>
+              <option>80-89%</option>
+              <option>90%+</option>
+            </select>
+          </div>
+          <p id="scholar-fee"></p>
+          <div class="input-row">
+            <button onclick="scholarship()">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

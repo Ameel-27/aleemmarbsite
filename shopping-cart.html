@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MARB International Services &ndash; Shopping Cart</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/shopping-cart.css">
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="./index.html">MARB International Services</a>
+      </div>
+      <div id="nav-button">&equiv;</div>
+      <div class="nav-items">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./e-commerce.html" class="nav-item active">E-Commerce</a>
+        <a href="./hotel-booking.html" class="nav-item">Hotel Booking</a>
+        <a href="./transportation.html" class="nav-item">Transportation</a>
+        <a href="./welfare-trust.html" class="nav-item">Welfare Trust</a>
+      </div>
+    </nav>
+    <main>
+      <section id="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <table id="products">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="product">
+                  <img src="./assets/example-product.png" alt="Product 1" class="product-thumbnail">
+                  <h3 class="product-name">Product 1</h3>
+                </div>
+              </td>
+              <td>2</td>
+              <td>$99.99</td>
+              <td>$199.98</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product">
+                  <img src="./assets/example-product.png" alt="Product 4" class="product-thumbnail">
+                  <h3 class="product-name">Product 4</h3>
+                </div>
+              </td>
+              <td>1</td>
+              <td>$99.99</td>
+              <td>$99.99</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product">
+                  <img src="./assets/example-product.png" alt="Product 10" class="product-thumbnail">
+                  <h3 class="product-name">Product 10</h3>
+                </div>
+              </td>
+              <td>3</td>
+              <td>$99.99</td>
+              <td>$299.97</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="shopping-cart-controls">
+          <a href="./e-commerce.html" class="button">Continue Shopping</a>
+          <button class="success">Checkout ($599.94)</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
